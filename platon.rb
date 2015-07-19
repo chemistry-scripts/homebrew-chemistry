@@ -12,10 +12,18 @@ class Platon < Formula
   # depends_on "cmake" => :build
   depends_on :x11 # if your formula requires any X11/XQuartz components
 
-  def install
-    # Download additional library
+  resource "additional_files" do
+     url "http://www.platonsoft.nl/xraysoft/unix/platon/xdrvr.c.gz"
+     sha256 ""
+   end
 
-    system "make", "install" # if this fails, try separate make/make install steps
+  def install
+    # Download additional library for X11
+    resource("additional_files")
+    # Compile with gfortran
+    system "gfortran -o platon platon.f xdrvr.c -I/opt/X11/include -L/opt/X11/lib -lX11"
+    # Install
+    bin.install "platon"
   end
 
   test do
