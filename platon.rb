@@ -6,8 +6,8 @@ class Platon < Formula
   desc ""
   homepage ""
   url "http://www.platonsoft.nl/xraysoft/unix/platon/platon.f.gz"
-  sha256 ""
-  version "30715"
+  sha256 "dbd1ed733fca491ec6644481cb6dc3365cde0e6de965fec721339049c78df7c3"
+  version "2"
 
   # depends_on "cmake" => :build
   depends_on :x11 # if your formula requires any X11/XQuartz components
