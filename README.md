@@ -1,2 +1,4 @@
 # homebrew-chemistry
-Home-brew tap for some Chemistry open source programs
+Homebrew tap for some Chemistry open source programs
+
+For now, platon only.
