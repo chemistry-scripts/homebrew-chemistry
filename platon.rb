@@ -17,6 +17,8 @@ class Platon < Formula
     system "gfortran -o platon platon.f xdrvr.c -I/opt/X11/include -L/opt/X11/lib -lX11"
     # Install
     bin.install "platon"
+    # Copy check.def file
+    prefix.install "check.def"
   end
 
   test do
