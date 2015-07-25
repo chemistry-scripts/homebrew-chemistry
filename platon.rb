@@ -10,7 +10,7 @@ class Platon < Formula
 
   # depends_on "cmake" => :build
   depends_on :x11 # if your formula requires any X11/XQuartz components
-  depends_on :gfortran
+  depends_on :fortran
 
   def install
     # Compile with gfortran
