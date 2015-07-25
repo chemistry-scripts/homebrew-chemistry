@@ -6,7 +6,7 @@ class Platon < Formula
   desc "A Visualization software for X-Ray crystallographers"
   homepage "http://www.platonsoft.nl"
   url "https://github.com/LaTruelle/homebrew-chemistry-data/blob/master/platon-30715.tar.gz?raw=true"
-  sha256 ""
+  sha256 "9049d116a49f205821faa219fe785141390b082948233b2483506f2756a3a39d"
 
   # depends_on "cmake" => :build
   depends_on :x11 # if your formula requires any X11/XQuartz components
