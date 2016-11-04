@@ -5,7 +5,7 @@
 class Platon < Formula
   desc "A Visualization software for X-Ray crystallographers"
   homepage "http://www.platonsoft.nl"
-  url "https://github.com/LaTruelle/homebrew-chemistry-data/blob/master/platon-30715.tar.gz?raw=true"
+  url "https://github.com/chemistry-scripts/homebrew-chemistry-data/blob/master/platon-30715.tar.gz?raw=true"
   sha256 "9049d116a49f205821faa219fe785141390b082948233b2483506f2756a3a39d"
 
   # depends_on "cmake" => :build
@@ -22,15 +22,8 @@ class Platon < Formula
   end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! It's enough to just replace
-    # "false" with the main program this formula installs, but it'd be nice if you
-    # were more thorough. Run the test with `brew test platon`. Options passed
-    # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
-    #
-    # The installed folder is not in the path, so use the entire path to any
-    # executables being tested: `system "#{bin}/program", "do", "something"`.
+    # Just start platon
+    # Better testing is probably required
     system "#{bin}/platon"
   end
 end
